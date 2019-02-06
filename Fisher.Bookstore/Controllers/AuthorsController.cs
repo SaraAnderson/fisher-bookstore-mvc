@@ -5,9 +5,11 @@ namespace Fisher.Bookstore.Controllers {
     public class AuthorsController : Controller {
         
         public IActionResult Index() {
+            return View();
             return Content("This is the Books controller's Authors action.");
         }
         public IActionResult Featured() {
+            return View();
             return Content("This is the Books controller's Featured action.");
         }
     }
