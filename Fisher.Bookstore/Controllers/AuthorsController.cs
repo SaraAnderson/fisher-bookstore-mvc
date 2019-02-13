@@ -9,6 +9,12 @@ namespace Fisher.Bookstore.Controllers {
             return Content("This is the Books controller's Authors action.");
         }
         public IActionResult Featured() {
+            //we would normally get this from a database
+            var featuredAuthor = new Models.Author() {
+                AuthorId = 1,
+                Name = "J.K. Rowling"
+            };
+            return View(featuredAuthor);
             return View();
             return Content("This is the Books controller's Featured action.");
         }
